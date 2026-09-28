@@ -35,6 +35,16 @@
 </html>
 <script>
 function abrir() {
-	window.location.href='working.html';
+	usuario = document.getElementById('usr').value;
+	if (usuario == ''){
+		window.location.href='msg.html';
+	   //alert('Prencher usuario');
+	}else{
+		if (usuario == 'admin'){ 
+	        window.location.href='pg001.html';
+	    }else{
+			window.location.href='pg002.html';
+		}    
+    }
 }
 </script>
