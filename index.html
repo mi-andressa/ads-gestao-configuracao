@@ -16,7 +16,7 @@
       <label for="senha">SENHA:</label>
       <input type="password" id="senha" name="senha">
     </p>
-    <button type="button" id="entrar">ENTRAR</button>
+    <button type="submit" id="entrar">ENTRAR</button>
   </form>
   <script>
     // Somente o campo usuario e validado (a senha nao e verificada).
@@ -33,7 +33,9 @@
       return "pg002.html";
     }
 
-    document.getElementById("entrar").addEventListener("click", function () {
+    // Usa o evento submit do formulario para que ENTER tambem faca o login.
+    document.getElementById("login-form").addEventListener("submit", function (evento) {
+      evento.preventDefault();
       location.href = destinoLogin(document.getElementById("usuario").value);
     });
   </script>
