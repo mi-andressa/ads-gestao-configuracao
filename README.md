@@ -6,8 +6,11 @@ praticando gestão de configuração (branches, Pull Requests, tags e changelog)
 
 ## Integrantes
 
-- Victor Lis
-- Andressa (completar nome completo)
+- Ana Tayná Reis Maciel (BP3061086)
+- Mariana Mourão Sampaio (BP3061094)
+- Mirela Andressa de Oliveira (BP3065332)
+- Victor Lis Bronzo (BP3062759)
+- Yago Barbosa Dini (BP3062813)
 
 ## Páginas da aplicação
 
