@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+</head>
+<body>
+  <h1>Sistema Hipotético para Atividade Prática</h1>
+  <hr>
+  <form id="login-form">
+    <p>
+      <label for="usuario">USUÁRIO:</label>
+      <input type="text" id="usuario" name="usuario">
+    </p>
+    <p>
+      <label for="senha">SENHA:</label>
+      <input type="password" id="senha" name="senha">
+    </p>
+    <button type="button" id="entrar">ENTRAR</button>
+  </form>
+  <script>
+    document.getElementById("entrar").addEventListener("click", function () {
+      location.href = "working.html";
+    });
+  </script>
+</body>
+</html>
