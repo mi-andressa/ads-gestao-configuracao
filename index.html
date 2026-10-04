@@ -19,8 +19,22 @@
     <button type="button" id="entrar">ENTRAR</button>
   </form>
   <script>
+    // Somente o campo usuario e validado (a senha nao e verificada).
+    // A comparacao com "admin" e exata e sensivel a maiusculas/minusculas:
+    // "Admin" ou "ADMIN" sao tratados como operador.
+    function destinoLogin(usuario) {
+      var u = (usuario || "").trim();
+      if (u === "") {
+        return "msg.html";
+      }
+      if (u === "admin") {
+        return "pg001.html";
+      }
+      return "pg002.html";
+    }
+
     document.getElementById("entrar").addEventListener("click", function () {
-      location.href = "pg001.html";
+      location.href = destinoLogin(document.getElementById("usuario").value);
     });
   </script>
 </body>
